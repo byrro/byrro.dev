@@ -96,4 +96,53 @@
     <li><img src="../pdf.png">&nbsp;<a target="_blank" href="https://byrro.dev/files/portfolio/ebook-serverless-best-practices.pdf">Serverless Best Practices</a></li>
     <li><img src="../pdf.png">&nbsp;<a target="_blank" href="https://byrro.dev/files/portfolio/ebook-10-things-you-must-know-about-serverless-debugging.pdf">10 Things You Must Know About Serverless Debugging</a></li>
 
+    <hr style="margin-top: 30px">
+    
+    <i><b><span id="thought"></span></b> ~<span id="author"></span></i>
+    
+    <hr>
+    
+    <p>
+        <i>@<script>document.write(new Date().getFullYear());</script> 
+            # Inspired by <a href="https://motherfuckingwebsite.com/">MFW</a>, 
+            <a href="https://evenbettermotherfucking.website/">EBMFW</a> and the thought above</i>
+    </p>
+
 </body>
+
+<script>
+    thoughts = [
+        { text: 'Motivation is what gets you started. Habit is what keeps you going.', author: 'Jim Ryun' },
+        { text: 'I will not follow where the path may lead, but I will go where there is no path, and I will leave a trail.', author: 'Muriel Strode' },
+        { text: 'Build your own dreams, or someone else will hire you to build theirs.', author: 'Farrah Gray' },
+        { text: 'You can\'t cross the sea merely by standing and staring at the water.', author: 'Rabindranath Tagore' },
+        { text: 'Great spirits have always faced violent opposition from mediocre minds.', author: 'Einstein' },
+        { text: 'Rule your mind or it will rule you.', author: 'Horace' },
+        { text: 'All progress takes place outside the comfort zone.', author: 'Michael John Bobak' },
+        { text: 'Either you run the day, or the day runs you.', author: 'Jim Robin' },
+        { text: 'Focusing is about saying No.', author: 'Steve Jobs' },
+        { text: 'Care about what other people think and you will always be their prisoner.', author: 'Lao Tzu' },
+        { text: 'Your worst enemy cannot harm you as much as your own unguarded thoughts.', author: 'Buddha' },
+        { text: 'In theory there is no difference between theory and practice. In practice there is.', author: 'Yogi Berra' },
+        { text: 'Our greatest glory is not in never failing, but in rising up every time we fail.', author: 'Ralph Waldo Emerson' },
+        { text: 'What would you do if you weren\'t afraid?', author: 'Spencer Johnson' },
+        { text: 'The happiness of your life depends on the quality of your thoughts.', author: 'Marcus Aurelius' },
+        { text: 'Knowing is not enough, we must apply. Willing is not enough, we must do.', author: 'Bruce Lee' },
+        { text: 'The secret of getting ahead is getting started.', author: 'Mark Twain' },
+        { text: 'You don\'t learn to walk by following rules.You learn by doing, and by falling over.', author: 'Richard Branson' },
+        { text: 'A person who never made a mistake never tried anything new.', author: 'Einstein' },
+        { text: 'If you look at what you have in life, you’ll always have more. If you look at what you don’t have in life, you’ll never have enough.', author: 'Oprah Winfrey' },
+        { text: 'Pearls don\'t lie on the seashore. If you want one, you must dive for it.', author: 'Chinese Proverb' },
+        { text: 'A ship is always safe at the shore - but that is NOT what it is built for.', author: 'Einstein' },
+        { text: 'Simplicity is prerequisite for reliability.', author: 'Edsger W. Djikstra' },
+    ]
+    random_thought = thoughts[Math.floor(Math.random() * thoughts.length)]
+
+    $thought = document.getElementById('thought')
+    $thought.textContent = random_thought['text']
+
+    $author = document.getElementById('author')
+    $author.textContent = random_thought['author']
+</script>
+
+</html>
