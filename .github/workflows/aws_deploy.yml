@@ -3,7 +3,7 @@ name: Deploy website to AWS S3 and Invalidates CloudFront Cache
 on:
   push:
     branches:
-    - master
+    - main
 
 jobs:
   deploy:
