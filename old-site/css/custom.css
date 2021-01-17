@@ -1,0 +1,11 @@
+.contact-form-input-error {
+    border: 2px solid #AD4141 !important;
+    background-color: #301212 !important;
+}
+
+#submit-success-msg {
+    color: #9DC664;
+    font-weight: bold;
+    size: 1.5em;
+    display: none;
+}
